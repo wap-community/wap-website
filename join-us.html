@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Webpixels" />
+    <title>Join us at We are Plymouths</title>
+    <!-- Preloader -->
+    <style>
+      @keyframes hidePreloader {
+        0% {
+          width: 100%;
+          height: 100%;
+        }
+
+        100% {
+          width: 0;
+          height: 0;
+        }
+      }
+
+      body > div.preloader {
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 100%;
+        z-index: 1071;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      body:not(.loaded) > div.preloader {
+        opacity: 1;
+      }
+
+      body:not(.loaded) {
+        overflow: hidden;
+      }
+
+      body.loaded > div.preloader {
+        animation: hidePreloader 0.5s linear 0.5s forwards;
+      }
+    </style>
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          document.querySelector("body").classList.add("loaded");
+        }, 300);
+      });
+    </script>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Quick CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/css/quick-website.css"
+      id="stylesheet"
+    />
+    <style>
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fab {
+        padding: 20px;
+        font-size: 30px;
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fa:hover {
+        opacity: 1;
+        background: #ffffff;
+      }
+      .fab:hover {
+        opacity: 0.9;
+        background: #ffffff;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+
+      .fa-linkedin {
+        background: #007bb5;
+        color: white;
+      }
+
+      .fa-youtube {
+        background: #bb0000;
+        color: white;
+      }
+
+      .fa-instagram {
+        background: #125688;
+        color: white;
+      }
+
+      .fa-tumblr {
+        background: #2c4762;
+        color: white;
+      }
+
+      .fa-discord {
+        background: #00b489;
+        color: white;
+      }
+
+      .fa-medium {
+        background: #ff5700;
+        color: white;
+      }
+
+      .fa-github {
+        background: #ff6600;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      id="modal-cookies"
+      data-backdrop="false"
+      aria-labelledby="modal-cookies"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+        <div class="modal-content bg-dark-dark">
+          <div class="modal-body">
+            <!-- Text -->
+            <p class="text-sm text-white mb-3">
+              We use cookies so that our themes work for you. By using our
+              website, you agree to our use of cookies.
+            </p>
+            <!-- Buttons -->
+            <!-- <a
+              href="pages/utility/terms.html"
+              class="btn btn-sm btn-white"
+              target="_blank"
+              >Learn more</a
+            > -->
+            <button
+              type="button"
+              class="btn btn-sm btn-primary mr-2"
+              data-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <!-- Brand -->
+        <a class="" href="index.html">
+          <img
+            alt="We are Plymouths Logo"
+            src="assets/img/wap-logo.webp"
+            height="60%"
+            id="navbar-logo"
+          />
+        </a>
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mt-4 mt-lg-0 ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community.html">Community</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active " href="join-us.html">Join Us</a>
+            </li>
+          
+          </ul>
+          <!-- Button -->
+          <a
+            class="navbar-btn btn btn-sm btn-primary d-none d-lg-inline-block ml-3"
+            href="https://discord.gg/zPAvFpr"
+          >
+            Join Discord
+          </a>
+          <!-- Mobile button -->
+          <div class="d-lg-none text-center">
+            <a
+              href="https://webpixels.io/themes/quick-website-ui-kit"
+              class="btn btn-block btn-sm btn-warning"
+              >See more details</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main content -->
+  
+    <section class="slice slice-lg pt-lg-6 pb-0 pb-lg-6 bg-section-secondary">
+      <div class="container">
+        <!-- Title -->
+        <!-- Section title -->
+        <div class="row mb-5 justify-content-center text-center">
+          <div class="col-lg-8">
+            <span class="badge badge-soft-success badge-pill badge-lg">
+              Together we can do better
+            </span>
+            <h2 class="mt-4">Join Us</h2>
+            <div class="mt-2">
+              <p class="lead lh-180">
+              Join the We are Plymouths
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mx-lg-n4">
+          <div class="col-lg-4 col-md-6 px-lg-4">
+            <div class="card shadow-none">
+              <div class="p-3 d-flex">
+                <div>
+                  <div>
+                    <div
+                      class="icon icon-shape rounded-circle bg-success text-white mr-4"
+                    >
+                      <i data-feather="check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span class="h6">Contributor</span>
+                  <p class="text-sm text-muted mb-0">   Open for Applications</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 px-lg-4">
+            <div class="card shadow-none">
+              <div class="p-3 d-flex">
+                <div>
+                  <div>
+                    <div
+                      class="icon icon-shape rounded-circle bg-success text-white mr-4"
+                    >
+                      <i data-feather="check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span class="h6">
+                    Campus Lead</span>
+                  <p class="text-sm text-muted mb-0">
+                   Open for Applications
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 px-lg-4">
+            <div class="card shadow-none">
+              <div class="p-3 d-flex">
+                <div>
+                  <div>
+                    <div
+                      class="icon icon-shape rounded-circle bg-success text-white mr-4"
+                    >
+                      <i data-feather="check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <span class="h6">Chapter Lead</span>
+                  <p class="text-sm text-muted mb-0">   Open for Applications</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="py-1">
+          <div class="row row-grid justify-content-between align-items-center">
+            
+            <div class="col-lg-6">
+              <div class="mb-0 ml-lg-5">
+                <div class="p-2">
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/svg/illustrations/illustration-1.svg"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <h5 class="h3">Contributor</h5>
+              <p class="lead my-4">
+                If you like to contribute to our community in ways like writing/reviewing blogs, taking guest lectures, sharing knowledge, team management, graphics, marketing, or any other way you think. Do so by clicking on the Join Us button.
+
+
+              </p>
+              <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeUXHTs6nsgYEPttkLpWoeLVrYUUkh9BnpTBH1cc_PNy4ijTA/viewform"
+              class="btn btn-outline-primary btn-icon d-none d-lg-inline-block"
+              target="_blank"
+              >Join as Contributor</a
+            >
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="py-1">
+          <div class="row row-grid justify-content-between align-items-center">
+            <div class="col-lg-5">
+              <h5 class="h3">Campus Lead</h5>
+              <p class="lead my-4">
+                If you would like to represent We Are Plymouth’s in your University/organization, then fill out the form to do so.
+              </p>
+              <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSciAHnDyV9k3zpnv2j9cX8orc2p9UBO1ax6QkOI2ChLxmmWsQ/viewform"
+              class="btn btn-outline-primary btn-icon d-none d-lg-inline-block"
+              target="_blank"
+              >Join as Campus Lead</a
+            >
+            </div>
+            <div class="col-lg-6">
+              <div class="mb-0 ml-lg-5">
+                <div class="p-2">
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/svg/illustrations/illustration-5.svg"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-1">
+          <div class="row row-grid justify-content-between align-items-center">
+            
+            <div class="col-lg-6">
+              <div class="mb-0 ml-lg-5">
+                <div class="p-2">
+                  <img
+                    alt="Image placeholder"
+                    src="assets/img/svg/illustrations/illustration-3.svg"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <h5 class="h3">Chapter Lead</h5>
+              <p class="lead my-4">
+                If you are interested in starting our chapter in your city or interested in being a part of our existing chapter. Do so by clicking on Join Us button.
+
+              </p>
+              <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeBLx9ZTVnSemopC3mSARfw06QVnWuZcMRKk2dj9gSN6J8DHw/viewform"
+              class="btn btn-outline-primary btn-icon d-none d-lg-inline-block"
+              target="_blank"
+              >Join as Chapter Lead</a
+            >
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="card bg-section-dark align-items-center text-center border-0 rounded-lg" style="max-width: 100%;">
+          <div class="card-body px-5">
+              <div class="row text-center">
+                  <div class="col-12 text-center">
+                      <div class=" mx-auto text-center align-items-center">
+                          <div class="text-center mx-auto">
+                              <div class="icon icon-sm icon-shape bg-warning text-white rounded-circle mr-3">
+                                  <i data-feather="share"></i>
+                              </div>
+                          </div>
+                          <span class="h6 text-white text-center mb-0">Join the Active Community</span>
+                      </div>
+                      <h3 class="text-white pt-4">Join our Discord community.</h3>
+                      <a href="https://discord.com/invite/zPAvFpr" target="_blank" class="btn btn-white btn-icon">
+                        <span class="btn-inner--text">Join Now</span>
+                        <span class="btn-inner--icon">
+                            <i data-feather="discord" class="text-warning"></i>
+                        </span>
+                    </a>
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+   
+
+
+   
+    <footer class="position-relative" id="footer-main">
+      <div class="footer pt-lg-7 footer-dark bg-dark">
+        <!-- SVG shape -->
+        <div
+          class="shape-container shape-line shape-position-top shape-orientation-inverse"
+        >
+          <svg
+            width="2560px"
+            height="100px"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="none"
+            x="0px"
+            y="0px"
+            viewBox="0 0 2560 100"
+            style="enable-background: new 0 0 2560 100"
+            xml:space="preserve"
+            class="fill-section-secondary"
+          >
+            <polygon points="2560 0 2560 100 0 100"></polygon>
+          </svg>
+        </div>
+        <!-- Footer -->
+        <div class="container pt-4">
+          <div class="row mx-auto">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <!-- Theme's logo -->
+              <a href="index.html">
+                <img
+                  alt="Image placeholder"
+                  src="assets/img/wap-logo.webp"
+                  id="footer-logo"
+                />
+              </a>
+              <!-- Webpixels' mission -->
+              <p class="mt-4 text-sm opacity-8 pr-lg-4">
+                We Are Plymouth’s is an education hub where each individual is a Plymouth & we only focus to deliver quality education.
+              </p>
+              <!-- Social -->
+          
+            </div>
+           
+          </div>
+          <hr class="divider divider-fade divider-dark my-4" />
+          <div class="row align-items-center justify-content-md-between pb-4">
+            <div class="col-md-6">
+              <div
+                class="copyright text-sm font-weight-bold text-center text-md-left"
+              >
+               
+                Copyright  &copy; 2020. All Rights Reserved.
+              </div>
+            </div>
+            <!-- <div class="col-md-6">
+              <ul
+                class="nav justify-content-center justify-content-md-end mt-3 mt-md-0"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Terms </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Privacy </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Cookies </a>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Core JS  -->
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/svg-injector/dist/svg-injector.min.js"></script>
+    <script src="assets/libs/feather-icons/dist/feather.min.js"></script>
+    <!-- Quick JS -->
+    <script src="assets/js/quick-website.js"></script>
+    <!-- Feather Icons -->
+    <script>
+      feather.replace({
+        width: "1em",
+        height: "1em",
+      });
+    </script>
+  </body>
+</html>
